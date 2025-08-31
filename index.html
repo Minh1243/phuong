@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>1 monthhhh</title>
+  <style>
+    body {
+      background: pink;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin: 0;
+      min-height: 100vh; /* safer than fixed height */
+      -webkit-text-size-adjust: 100%; /* stops font auto-resize */
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 500px; /* make the main box wider (default was 350px) */
+    }
+    h1 {
+      color: crimson;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    #yesBtn {
+      background: crimson;
+      color: white;
+      transform: scale(1);
+    }
+    #noBtn {
+      background: gray;
+      color: white;
+    }
+
+    /* Love Letter Styles */
+    
+
+    .letter {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      width: 450px; /* wider letter box */
+      max-height: 1000px;
+    }
+
+
+    .flap {
+      background: crimson;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: all 0.4s ease;
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, padding 0.3s ease;
+      color: #444;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .letter.open .content {
+      max-height: 400px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; /* makes scroll buttery on iOS */
+
+
+    }
+
+    .love-img {
+      margin-top: 15px;
+      max-width: 100%;   /* shrink if screen is small */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="main">
+    <h2>1 monthhhhh!!!</h2>
+    <h2>I love youuu 💖</h2>
+    <h1>Do you love me backkk?</h1>
+    <button class="btn" id="yesBtn">Yes 💕</button>
+    <button class="btn" id="noBtn">No 💔</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    let scale = 1; // for Yes button growth
+
+    yesBtn.addEventListener("click", () => {
+      document.getElementById("main").innerHTML = `
+        <div class="letter" id="letter">
+          <div class="flap">💌 I love u tooooo 💌</div>
+          <div class="content">
+            <p>hê nhô sao tgian trôi nhanh vậy sao. a vx nhớ nhx ngày nào mình còn đi lượn. nhx hôm lm bánh. nhx hôm mình tâm sự ngày đêm chỉ nhai đi nhai lại 1 chuyện :)). h thì nhớ lại hôm a sg nhà e lm lông mày chỉ để đc lại gần và gặp e nh hơn mà ai ngờ lại dẫn tới ngày hnay. hè này đã có bnh chuyện xảy ra à. sao mà quên đc hôm đầu đc sĩ vs e chở e sg nhà c nấm bằng con lexus hoặc là hôm đi lotte khi mình ăn llao llao xog e bón trượt con mẹ nó ra khỏi mồm a :)))))). hâm vãi. sao a lại gặp đc 1 đứa dễ thương cá tính và tự lập nvay nma đôi khi lại có thể mít ướt nhx lúc ở bên cạnh a. a yêuu ee nh lắmmmm. kph vì vẻ bề ngoài hay j cả mà do cách e có thể thật lòng vs a và khiến a cgiac như mình đg ở nhà vậy. a k thể đếm bnh lần a sg nhà e chs, và a luôn trân trọng cách gia đình e luôn cởi mở vs a. hồi bé nh lúc a cx chẳng bt e đg suy nghĩ j luôn á lúc thì cáu lúc thì dịu dàng lúc thì đanh đá. nma lớn lên a ms hiểu, sau vẻ bề ngoại lạnh lùng khó tiếp cận nnao đi nx thì sâu bên trong vx chỉ là 1 cô gái đáng iu và luôn mn phụ thuộc vào 1 ai đó dù cô ấy có thể bị tổn thương đi nx. đấy ms là cô gái mà a iu, trúc phương chứ kph phuongtranf. hihi. nghĩ tke thui chứ mỗi ngày bên e cứ như 1 trải nghiệm ms ý k baoh chán đc. a chỉ mong đc bên e lâu hơn để nhìn hết tca các trúc phương: hangry, hâm, ngu, đần, khắm, thúi. kakaka. hôm mà a chính thức tỏ tình e a chỉ sợ mình k cbi đủ. buổi sáng hôm đó thì chạy lên phố mua vòng tay r định chạy đi mua hoaaa nma nhớ lại thảm hoạ ở sbay :))). haiz cười quá. a bt e k đòi hỏi hay cần nhx đồ vật chất nma a k mn bỏ lỡ cơ hội để đc nhìn thấy e cười, thấy e vui. bởi 1 cô gái xinh đẹp như e luôn xứng đáng để đc tca mọi thứ ò :> a cảm thấy mình luôn may mắn vì có thể đi cùng e bấy lâu nay. k chỉ từ lúc mình bắt đầu yêu nhau mà kể cả từ khi là bạn nx. nhìn cách e trưởng thành. nhìn cách e luôn qtam tới ng thân, bbe xung quanh. ngắm nhìn e trg mọi lúc mà e chẳng bt j luôn mòo hẹ hẹ. e k chỉ là ny a mà cx là b thân a nxx. a bt a k đc quá tình cảm hay lãng mạn đi nx nma a mn vt ra tca nhx thứ a đg suy nghĩ về e. nên là phương à 1 tháng trôi qua nhanh lắm. mình cùng nhau tạo thêm nh kỷ niệm ms nhó. hihi happy 1 month babyyy. i love you so much.
+
+(p.s: tưởng để mùng 1 kỷ niệm yêu nhau nên h ms gửi hihi)</p>
+            <img src="hihi.JPEG" alt="Us together 💖" class="love-img">
+          </div>
+        </div>
+       
+      `;
+
+      const letter = document.getElementById("letter");
+      letter.addEventListener("click", () => {
+        letter.classList.toggle("open");
+      });
+    });
+
+    noBtn.addEventListener("click", () => {
+      scale += 0.3; // enlarge Yes button each time No is clicked
+      yesBtn.style.transform = `scale(${scale})`;
+    });
+  </script>
+</body>
+</html>
